@@ -17,9 +17,9 @@ public class alterSQL {
             String query1 = "ALTER TABLE students ADD country  CHAR(30)";
 
             statement.execute(query1);
-            System.out.println("country column added to the table");
+            System.out.println("Country column added to the table");
 
-            System.out.println("Update students nationality:");
+            System.out.println("Update students nationality...");
             String query2 = "UPDATE students " +
                     "SET country = 'Italy' WHERE student_id in (1, 2)";
             statement.executeUpdate(query2);
